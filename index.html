@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacy's 20th Birthday - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="template-header">
+        Yeeeeyyy!!☺️
+    </div>
+    
+    <div class="main-container">
+        <nav class="navbar">
+            <div class="logo">🎂</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active" data-section="home">Home</a></li>
+                <li><a href="#" data-section="wishes">Wishes</a></li>
+                <li><a href="#" data-section="gallery">Gallery</a></li>
+                <li><a href="#" data-section="info">About Stacy</a></li>
+            </ul>
+            <div class="search-icon">🔍</div>
+        </nav>
+
+        
+        <div class="content section" id="home-section">
+            <div class="content-left">
+                <div class="bunting">
+                    <div class="flag"></div>
+                    <div class="flag"></div>
+                    <div class="flag"></div>
+                    <div class="flag"></div>
+                    <div class="flag"></div>
+                    <div class="flag"></div>
+                </div>
+                <h1 class="main-title">STACY IS TURNING 20</h1>
+                <p class="subtitle">Im happy walaiiii🤭</p>
+                <p class="date-info">11<span class="date-separator">•</span>JULY<span class="date-separator">•</span>00 | 00hs</p>
+                <p class="description">
+                    Today, I celebrate how far I’ve come, how strong I’ve been, and how much more I’m growing.
+                    This year, I choose happiness, peace, and purpose.
+                    I’m proud of myself — for surviving, for thriving, and for never giving up.
+                    Here’s to more laughter, love, and big dreams coming true.
+                    May this new age bring everything my heart desires.
+                    Cheers to me — I deserve the best. 🥂
+                </p>
+                <button class="rsvp-btn" onclick="handleRSVP()">wish Card</button>
+            </div>
+            <div class="content-right">
+                <div class="celebration-container">
+                    
+                    <div class="confetti star" style="left:10%; animation-delay:0s;">★</div>
+                    <div class="confetti heart" style="left:25%; animation-delay:0.5s;">❤</div>
+                    <div class="confetti star" style="left:40%; animation-delay:1s;">★</div>
+                    <div class="confetti heart" style="left:60%; animation-delay:1.5s;">❤</div>
+                    <div class="confetti star" style="left:80%; animation-delay:2s;">★</div>
+                    <div class="confetti heart" style="left:50%; animation-delay:2.5s;">❤</div>
+                    <div class="confetti star" style="left:70%; animation-delay:1.2s;">★</div>
+                    <div class="confetti heart" style="left:30%; animation-delay:1.7s;">❤</div>
+                    
+                    <div class="balloon" style="background:#ffb3ec; left:10%; animation-delay:0s;"></div>
+                    <div class="balloon" style="background:#a5b4fc; left:30%; animation-delay:1s;"></div>
+                    <div class="balloon" style="background:#fcd34d; left:50%; animation-delay:2s;"></div>
+                    <div class="balloon" style="background:#6ee7b7; left:70%; animation-delay:1.5s;"></div>
+                    <div class="balloon" style="background:#fca5a5; left:85%; animation-delay:0.5s;"></div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="section" id="wishes-section" style="display:none; padding:40px;">
+            <h2>Send Me a Sweet Birthday Wish!</h2>
+            <form id="wish-form" style="margin-bottom:20px;">
+                <input type="text" id="wish-name" placeholder="Your Name" required style="padding:8px; border-radius:8px; border:1px solid #ccc;">
+                <input type="text" id="wish-message" placeholder="Your Message" required style="padding:8px; border-radius:8px; border:1px solid #ccc; width:300px;">
+                <button type="submit" style="padding:8px 16px; border-radius:8px; background:#6366f1; color:white; border:none;">Send Wish</button>
+            </form>
+            <div id="wishes-list">
+                
+            </div>
+        </div>
+
+        
+        <div class="section" id="gallery-section" style="display:none; padding:40px;">
+            <h2>My Birthday Gallery📸</h2>
+            <div style="display:flex; flex-wrap:wrap; gap:20px;">
+                <img src="pic27.jpg" alt="Gallery 8" style="width:200px; border-radius:12px;">
+                <img src="pic28.jpg" alt="Gallery 9" style="width:200px; border-radius:12px;">
+                <img src="pic29.jpg" alt="Gallery 10" style="width:200px; border-radius:12px;">
+                <img src="pic30.jpg" alt="Gallery 11" style="width:250px; border-radius:12px;">
+                <img src="pic1.jpg" alt="Gallery 1" style="width:250px; border-radius:12px;">
+                <img src="pic41.jpg" alt="Gallery 2" style="width:200px; border-radius:12px;">
+                <img src="pic4.jpg" alt="Gallery 3" style="width:220px; border-radius:50px;">
+                <img src="pic5.jpg" alt="Gallery 4" style="width:250px; border-radius:12px;">
+                <img src="pic7.jpg" alt="Gallery 5" style="width:250px; border-radius:12px;">
+                <img src="pic10.jpg" alt="Gallery 6" style="width:200px; border-radius:12px;">
+                <img src="pic11.jpg" alt="Gallery 7" style="width:200px; border-radius:12px;">
+                <img src="pic40.jpg" alt="Gallery 8" style="width:250px; border-radius:12px;">
+                <img src="pic13.jpg" alt="Gallery 9" style="width:200px; border-radius:12px;">
+                <img src="pic14.jpg" alt="Gallery 10" style="width:200px; border-radius:12px;">
+                <img src="pic15.jpg" alt="Gallery 11" style="width:250px; border-radius:12px;">;
+                <img src="pic16.jpg" alt="Gallery 1" style="width:200px; border-radius:12px;">
+                <img src="pic17.jpg" alt="Gallery 2" style="width:200px; border-radius:12px;">
+                <img src="pic18.jpg" alt="Gallery 3" style="width:250px; border-radius:12px;">
+                <img src="pic19.jpg" alt="Gallery 4" style="width:200px; border-radius:12px;">
+                <img src="pic20.jpg" alt="Gallery 5" style="width:200px; border-radius:12px;">
+                <img src="pic21.jpg" alt="Gallery 6" style="width:200px; border-radius:12px;">
+                <img src="pic22.jpg" alt="Gallery 7" style="width:200px; border-radius:12px;">
+                <img src="pic23.jpg" alt="Gallery 8" style="width:250px; border-radius:12px;">
+                <img src="pic24.jpg" alt="Gallery 9" style="width:200px; border-radius:12px;">
+                <img src="pic25.jpg" alt="Gallery 10" style="width:200px; border-radius:12px;">
+                <img src="pic26.jpg" alt="Gallery 11" style="width:200px; border-radius:50px;">
+                <img src="pic12.jpg" alt="Gallery 10" style="width:200px; border-radius:12px;">
+                <img src="pic2.jpg" alt="Gallery 11" style="width:200px; border-radius:50px;">
+                <video controls style="width:200px; border-radius:12px;">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        
+        <div class="section" id="info-section" style="display:none; padding:40px;">
+            <h2>About Me</h2>
+            <h1>🎂 Hey there, I'm <span class="glow">stacy🌺</span>!</h1>
+            <p class="fun-text">
+               🥳 It's my special day, and I'm feeling <span class="highlight">amazing</span>! <br><br>
+                I love building cool stuff with <span class="highlight">React.js</span> & <span class="highlight">PHP</span>,
+                 and other languages but today, it’s all about cake, vibes, and joy! 🍰<br><br>
+                🎈 I’m a <span class="highlight">20-year-old</span> with a passion for <span class="highlight">coding😚</span>,
+                and currently im in my second year of uni, studying <span class="highlight">Software Engineering</span>.<br>
+                Actually,it was my <span class="highlight">Drean course</span> makofi kwangu 😭😂😂i ate books when young lemme tell you maina.<br>
+
+              🎨 I’m creative, curious, and a little bit obsessed with animations.<br>
+                🎉 I’m all about good times, great friends, and making memories that last.I have alot of friends buh unfortunately for most of them we live far apart so i interact with them online.🌚 <br>
+               i love making videos aloooot💅,,doing makeup,,,styling👛,,,,they are simply what i loving doing most when bored or free<br
+                💖 I’m passionate about learning, growing, and spreading positivity everywhere I go.<br>
+              💡 I enjoy solving problems, designing things, and dancing when nobody’s watching 💃.<br>
+              🚀 My energy today? Bright, bold, and unstoppable.<br><br>
+               So grab a slice and join the fun – the best is yet to come! 🎈🎁🎉
+            </p>
+        </div>
+
+        <div class="wave-background"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
